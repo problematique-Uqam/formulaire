@@ -1,7 +1,12 @@
-.champ2, .champ3 , .champ4{
+*{
+    box-sizing: border-box;
+}
+
+.champ2,  .champ4{
     display: none;
 }
 body {
+    background-color: #CEEEFF;
     transition: filter 0.5s ease; /* Smooth transition for the blur effect */
 }
 body.blurred {
@@ -16,12 +21,59 @@ body.blurred {
     position: absolute;
 }
 
+#popup2{
+    bottom: 15vh;
+    right: 8vh;
+    width: 40vw;
+    height: 25vh;
+    background-color: rgb(204, 229, 80);
+    border-radius: 5%;
+    border: 6px solid #ffa600;
+}
 #popup1{
-    top: 7vh;
+    top: 5vh;
     left: 4vh;
-    width: 60vw;
-    height: 30vh;
+    width: 50vw;
+    height: 29vh;
     background-color: rgb(95, 218, 240);
     border-radius: 5%;
     border: 6px solid #52ff2b;
+}
+
+h1{
+    font-family: 'Kadwa', serif;
+    font-weight: 700;
+    text-align: center;
+    color: #001C2B;
+}
+
+h2{
+    font-family: 'Kadwa', serif;
+    font-weight: 400;
+    font-size: 18px;
+    margin-bottom: 0px;
+    margin-left: 10px;
+}
+
+.wrapper{
+    width: 85vw;
+    margin-left: auto;
+    margin-right: auto;
+    position: relative;
+}
+
+form{
+    background-color: #F4FAFF;
+    padding: 30px 5%;
+    border-radius: 20px;
+}
+
+.textInput{
+    width: 100%;
+    padding: 10px;
+    box-shadow: none;
+}
+
+.popup{
+    z-index: 9;
 }

@@ -6,10 +6,14 @@ var champ2 = document.getElementById('champ2');
 var cap2 = document.getElementById('cap2').innerHTML;
 var field2 = document.querySelector('.champ2')
 
+var champ3 = document.getElementById('blurTrigger');
+var cap3 = document.getElementById('cap3').innerHTML;
 var field3 = document.querySelector('.champ3')
 var popup = document.getElementById('popup');
 
-var field4 = document.querySelector('.champ3')
+var champ4 = document.getElementById('champ4');
+var cap4 = document.getElementById('cap4').innerHTML;
+var field4 = document.querySelector('.champ4')
 const popups = document.querySelectorAll('.popup');
 let dernierContenuChamp = ''; // Pour suivre le contenu précédent du champ
 
@@ -116,8 +120,6 @@ function remapperClavier() {
     dernierContenu2 = champ2.value;
     estEnTrainDeSupprimer2 = false;
 
-    console.log(cap2)
-    console.log(champ2.value)
     if(cap2 == champ2.value){
         field3.style.display = "block";
     };
@@ -129,6 +131,8 @@ document.getElementById('blurTrigger').addEventListener('focus', function() {
 document.getElementById('blurTrigger').addEventListener('blur', function() {
     document.body.classList.remove('blurred');
 });
+
+console.log(champ3)
 
 document.getElementById('blurTrigger').addEventListener('input', function() {
     if(cap3 == champ3.value){

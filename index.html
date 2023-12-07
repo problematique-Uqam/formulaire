@@ -3,6 +3,9 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com"> 
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Kadwa:wght@400;700&family=Roboto:wght@300;400;500;700;900&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="style.css">
     <title>Document</title>
 </head>
@@ -32,43 +35,45 @@
             <!-- Contenu du popup 2 -->
         </div>
     </div>
-    <h1>Formulaire sur les troubels d'apprentissage en classe</h1>
-    <h2>Avant de commencer veuiller remplir se court Capcha</h2>
-    <br><br>
-    <form id="monFormulaire">
-        <div class="champ1">
-            <label for="champ1"><b>CAPCHA: </b><span id="cap1">nvdshu</span></label>
-            <br>
-            <input type="text" id="champ1" oninput="afficherPopup()">
-            <br><br><br>
-        </div>
+    <div class="wrapper">
+        <h1>Formulaire sur les troubles d'apprentissage en classe</h1>
+        <h2>Avant de commencer veuiller remplir se court Capcha</h2>
         
-        <div class="champ2">
-            <label for="champ2"><b>CAPCHA: </b><span id="cap2">vsdhoco</span></label>
-            <br>
-            <input type="text" id="champ2" oninput="remapperClavier()">
-            <br><br><br>
-        </div>
+        <form id="monFormulaire">
+            <div class="champ1">
+                <label for="champ1"><b>CAPCHA: </b><span id="cap1">nvdshu</span></label>
+                <br>
+                <input type="text" id="champ1" class="textInput" oninput="afficherPopup()">
+                <br><br><br>
+            </div>
+            
+            <div class="champ2">
+                <label for="champ2"><b>CAPCHA: </b><span id="cap2">vsdhoco</span></label>
+                <br>
+                <input type="text" id="champ2" class="textInput" oninput="remapperClavier()">
+                <br><br><br>
+            </div>
 
-        <div class="champ3">
-            <label for="champ3"><b>CAPCHA: </b><span id="cap3">futdcuk</span></label>
-            <br>
-            <input type="text" id="blurTrigger" id="champ3">
-            <br><br><br>
-        </div>
+            <div class="champ3">
+                <label for="blurTrigger"><b>CAPCHA: </b><span id="cap3">futdcuk</span></label>
+                <br>
+                <input type="text" id="blurTrigger" class="textInput">
+                <br><br><br>
+            </div>
 
-        <div class="champ4">
-            <label for="champ4"><b>CAPCHA: </b><span id="cap4">adfefaef</span></label>
-            <br>
-            <input type="text" id="blurTrigger" id="champ4">
-            <br><br><br>
-        </div>
-        
+            <div class="champ4">
+                <label for="champ4"><b>CAPCHA: </b><span id="cap4">adfefaef</span></label>
+                <br>
+                <input type="text" id="blurTrigger" class="textInput" id="champ4">
+                <br><br><br>
+            </div>
+            
 
-        <!-- Ajoutez d'autres champs selon vos besoins -->
+            <!-- Ajoutez d'autres champs selon vos besoins -->
 
-        <input type="submit" value="Soumettre">
-    </form>
+            <input type="submit" value="Soumettre">
+        </form>
+    </div>
 
     
 

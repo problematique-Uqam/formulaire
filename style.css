@@ -1,0 +1,29 @@
+.champ2, .champ3, .champ4 {
+  display: none;
+}
+
+body {
+  transition: filter 0.5s ease; /* Smooth transition for the blur effect */
+}
+
+body.blurred {
+  filter: blur(3px); /* Adjust the blur intensity as needed */
+}
+
+#cap4 {
+  color: rgb(255, 230, 230);
+}
+
+.popup {
+  position: absolute;
+}
+
+#popup1 {
+  top: 7vh;
+  left: 4vh;
+  width: 60vw;
+  height: 30vh;
+  background-color: rgb(95, 218, 240);
+  border-radius: 5%;
+  border: 6px solid #52ff2b;
+}/*# sourceMappingURL=style.css.map */

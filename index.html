@@ -36,42 +36,49 @@
         </div>
     </div>
     <div class="wrapper">
-        <h1>Formulaire sur les troubles d'apprentissage en classe</h1>
-        <h2>Avant de commencer veuiller remplir se court Capcha</h2>
+        
         
         <form id="monFormulaire">
-            <div class="champ1">
-                <label for="champ1"><b>CAPCHA: </b><span id="cap1">nvdshu</span></label>
-                <br>
-                <input type="text" id="champ1" class="textInput" oninput="afficherPopup()">
-                <br><br><br>
+            <div class="titre">
+                <h1>Formulaire sur les troubles d'apprentissage en classe</h1>
             </div>
-            
-            <div class="champ2">
-                <label for="champ2"><b>CAPCHA: </b><span id="cap2">vsdhoco</span></label>
-                <br>
-                <input type="text" id="champ2" class="textInput" oninput="remapperClavier()">
-                <br><br><br>
-            </div>
+            <div class="div full"></div>
+            <section>
+                <h2 class="normalText">veuillez remplir ce CAPCHA pour pouvoir acceder au questionnaire:</h2 class="normalText">
+                <div class="div small"></div>
+                <div class="champ1">
+                    <label for="champ1">RECOPIER LES LETTRES SUIVANTES:<div class="capch" id="cap1">nvdshu</div></label>
+                    
+                    <input type="text" id="champ1" class="textInput" oninput="afficherPopup()">
+                    <br>
+                    <div class="div small"></div>
+                </div>
+                
+                <div class="champ2">
+                    <label for="champ2">RECOPIER LES LETTRES SUIVANTES:<div class="capch" id="cap2">vsdhoco</div></label>
+                    
+                    <input type="text" id="champ2" class="textInput" oninput="remapperClavier()">
+                    <br>
+                    <div class="div small"></div>
+                </div>
+                
+                <div class="champ3">
+                    <label for="blurTrigger">RECOPIER LES LETTRES SUIVANTES:<div class="capch" id="cap3">futdcuk</div></label>
+                    
+                    <input type="text" id="blurTrigger" class="textInput">
+                    <br>
+                    <div class="div small"></div>
+                </div>
+                
+                <div class="champ4">
+                    <label for="champ4">RECOPIER LES LETTRES SUIVANTES:<div class="capch" id="cap4">adfefaef</div></label>
+                    
+                    <input type="text" id="blurTrigger" class="textInput" id="champ4">
+                    <br>
+                </div>
+            </section>
 
-            <div class="champ3">
-                <label for="blurTrigger"><b>CAPCHA: </b><span id="cap3">futdcuk</span></label>
-                <br>
-                <input type="text" id="blurTrigger" class="textInput">
-                <br><br><br>
-            </div>
-
-            <div class="champ4">
-                <label for="champ4"><b>CAPCHA: </b><span id="cap4">adfefaef</span></label>
-                <br>
-                <input type="text" id="blurTrigger" class="textInput" id="champ4">
-                <br><br><br>
-            </div>
-            
-
-            <!-- Ajoutez d'autres champs selon vos besoins -->
-
-            <input type="submit" value="Soumettre">
+            <!-- <input type="submit" value="Soumettre"> -->
         </form>
     </div>
 

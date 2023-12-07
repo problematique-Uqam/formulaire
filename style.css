@@ -2,10 +2,6 @@
   box-sizing: border-box;
 }
 
-.champ2, .champ3, .champ4 {
-  display: none;
-}
-
 body {
   background-color: #A9E0FF;
   transition: filter 0.5s ease; /* Smooth transition for the blur effect */
@@ -16,11 +12,11 @@ body.blurred {
 }
 
 #cap4 {
-  color: rgb(255, 230, 230);
+  color: rgb(242, 242, 242);
 }
 
 .popup {
-  position: absolute;
+  position: fixed;
 }
 
 #popup2 {
@@ -116,7 +112,7 @@ form {
 }
 
 .popup {
-  z-index: 9;
+  z-index: 999;
 }
 
 .capch {
@@ -127,6 +123,10 @@ form {
   font-size: 30px;
   padding: 2% 0;
   margin-bottom: 20px;
+  user-select: none;
+  -moz-user-select: none;
+  -webkit-user-select: none;
+  -ms-user-select: none;
 }
 
 section {

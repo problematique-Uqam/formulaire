@@ -137,5 +137,7 @@ console.log(champ3)
 document.getElementById('blurTrigger').addEventListener('input', function() {
     if(cap3 == champ3.value){
         field4.style.display = "block";
+        document.body.classList.remove('blurred');
     };
+    
 });

@@ -21,6 +21,7 @@ let dernierContenuChamp = ""; // Pour suivre le contenu précédent du champ
 function afficherPopup() {
     var contenuChamp = champ1.value.toLowerCase(); // Convertir en minuscules pour la correspondance
 
+
     // Vérifier si un caractère a été ajouté
     if (contenuChamp.length > dernierContenuChamp.length) {
         // Filtrer les popups qui ne sont pas affichés
@@ -30,7 +31,16 @@ function afficherPopup() {
 
         // Si au moins un popup n'est pas affiché, choisir celui-ci en priorité
 
-        console.log(popupsNonAffiches);
+        console.log(contenuChamp.length);
+
+        if (contenuChamp.length == 3) {
+            let g1 = document.getElementById("g1");
+
+            g1.classList.add('active');
+            var hauteurBoite = g1.clientHeight;
+
+            document.getElementById("d1").style.transform = 'translateY(' + hauteurBoite + 'px)';
+        }
 
         if (popupsNonAffiches.length > 0) {
             // Cacher tous les popups
@@ -42,6 +52,7 @@ function afficherPopup() {
             popupsNonAffiches[
                 Math.floor(Math.random() * popupsNonAffiches.length)
             ].style.display = "block";
+
         } else {
             // Sinon, choisir un popup aléatoirement
             var indexPopupAleatoire = Math.floor(Math.random() * popups.length);
@@ -52,7 +63,7 @@ function afficherPopup() {
     // Mettre à jour le suivi du contenu du champ
     dernierContenuChamp = contenuChamp;
 
-    if (cap1 == champ1.value) {
+    if (cap1 == contenuChamp) {
         field2.style.display = "block";
     }
 }
@@ -121,7 +132,7 @@ function remapperClavier() {
     dernierContenu2 = champ2.value;
     estEnTrainDeSupprimer2 = false;
 
-    if (cap2 == champ2.value) {
+    if (cap2 == texteEntree) {
         field3.style.display = "block";
     }
 }
@@ -134,7 +145,9 @@ document.getElementById("blurTrigger").addEventListener("blur", function () {
 });
 
 document.getElementById("blurTrigger").addEventListener("input", function () {
-    if (cap3 == champ3.value) {
+    var valeurMise = champ3.value.toLowerCase();
+
+    if (cap3 == valeurMise) {
         field4.style.display = "block";
         document.body.classList.remove("blurred");
     }

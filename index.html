@@ -1,89 +1,80 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="preconnect" href="https://fonts.googleapis.com"> 
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Kadwa:wght@400;700&family=Roboto:wght@300;400;500;700;900&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="style.css">
-    <title>Document</title>
-</head>
-<body>
-    <div class="wrapper">     
-        <form id="monFormulaire">
-            <div class="titre">
-                <h1>Formulaire sur les troubles d'apprentissage en classe</h1>
-            </div>
-            <div class="div full"></div>
-            <section>
-                <h2 class="normalText">veuillez remplir ce CAPCHA pour pouvoir acceder au questionnaire:</h2 class="normalText">
-                <div class="div small"></div>
-                <div class="champ1">
-                    <label for="champ1">RECOPIER LES LETTRES SUIVANTES:<div class="capch" id="cap1">nvdshu</div></label>
-                    
-                    <input type="text" id="champ1" class="textInput" oninput="afficherPopup()">
-                    <br>
+
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link
+            href="https://fonts.googleapis.com/css2?family=Kadwa:wght@400;700&family=Roboto:wght@300;400;500;700;900&display=swap"
+            rel="stylesheet">
+        <link rel="stylesheet" href="style.css">
+        <link rel="icon" type="image/x-icon" href="">
+        <title>Formulaire Apprentissage</title>
+    </head>
+
+    <body>
+        <div class="wrapper">
+            <form id="monFormulaire">
+                <div class="titre">
+                </div>
+                <div class="div full"></div>
+                <section>
+                    <h2 class="normalText">veuillez remplir ce CAPCHA pour pouvoir acceder au questionnaire:</h2
+                        class="normalText">
                     <div class="div small"></div>
-                </div>
-                
-                <div class="champ2">
-                    <label for="champ2">RECOPIER LES LETTRES SUIVANTES:<div class="capch" id="cap2">vsdhoco</div></label>
-                    
-                    <input type="text" id="champ2" class="textInput" oninput="remapperClavier()">
-                    <br>
-                    <div class="div small"></div>
-                </div>
-                
-                <div class="champ3">
-                    <label for="blurTrigger">RECOPIER LES LETTRES SUIVANTES:<div class="capch" id="cap3">futdcuk</div></label>
-                    
-                    <input type="text" id="blurTrigger" class="textInput">
-                    <br>
-                    <div class="div small"></div>
-                </div>
-                
-                <div class="champ4">
-                    <label for="champ4">RECOPIER LES LETTRES SUIVANTES:<div class="capch" id="cap4">adfefaef</div></label>
-                    
-                    <input type="text" id="blurTrigger" class="textInput" id="champ4">
-                    <br>
-                </div>
-            </section>
+                    <div class="champ1">
+                        <label for="champ1">RECOPIER LES LETTRES SUIVANTES:<div class="capch" id="cap1">nvdshu</div>
+                        </label>
 
-            <!-- <input type="submit" value="Soumettre"> -->
-        </form>
-    </div>
+                        <input type="text" id="champ1" class="textInput" oninput="afficherPopup()">
+                        <br>
+                        <div class="div small"></div>
+                    </div>
 
+                    <div class="champ2">
+                        <label for="champ2">RECOPIER LES LETTRES SUIVANTES:<div class="capch" id="cap2">vsdhoco</div>
+                        </label>
 
-    <div class="popup_block">
-        <div id="popup1" class="popup" style="display:none;">
-            <img src="popup/Fichier 2.png" alt="">
-            <!-- Contenu du popup 1 -->
+                        <input type="text" id="champ2" class="textInput" oninput="remapperClavier()">
+                        <br>
+                        <div class="div small"></div>
+                    </div>
+
+                    <div class="champ3">
+                        <label for="blurTrigger">RECOPIER LES LETTRES SUIVANTES:<div class="capch" id="cap3">futdcuk
+                            </div></label>
+
+                        <input type="text" id="blurTrigger" class="textInput">
+                        <br>
+                        <div class="div small"></div>
+                    </div>
+
+                    <div class="champ4">
+                        <label for="champ4">RECOPIER LES LETTRES SUIVANTES:<div class="capch" id="cap4">adfefaef</div>
+                        </label>
+
+                        <input type="text" id="blurTrigger" class="textInput" id="champ4">
+                        <br>
+                    </div>
+                </section>
+
+                <!-- <input type="submit" value="Soumettre"> -->
+            </form>
         </div>
-        
-        <div id="popup2" class="popup" style="display:none;">
-            <img src="popup/Fichier 1.png" alt="">
-            <!-- Contenu du popup 2 -->
-        </div>
-        <div id="popup3" class="popup" style="display:none;">
-            <img src="popup/Fichier 3.png" alt="">
-            <!-- Contenu du popup 1 -->
-        </div>
-        
-        <div id="popup4" class="popup" style="display:none;">
-            <img src="popup/Fichier 4.png" alt="">
-            <!-- Contenu du popup 2 -->
-        </div>
-    
-        <div id="popup5" class="popup" style="display:none;">
-            <img src="popup/Fichier 5.png" alt="">
-            <!-- Contenu du popup 2 -->
-        </div>
-    </div>
-    
 
 
-    <script src="script.js"></script>
-</body>
+        <div class="popup_block">
+            <img src="popup/Fichier 2.png" alt="" id="popup1" class="popup">
+            <img src="popup/Fichier 1.png" alt="" id="popup2" class="popup">
+            <img src="popup/Fichier 3.png" alt="" id="popup3" class="popup">
+            <img src="popup/Fichier 4.png" alt="" id="popup4" class="popup">
+            <img src="popup/Fichier 5.png" alt="" id="popup5" class="popup">
+        </div>
+
+
+        <script src="script.js"></script>
+    </body>
+
 </html>

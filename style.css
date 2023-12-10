@@ -2,13 +2,21 @@
   box-sizing: border-box;
 }
 
+.champ2,
+.champ3,
+.champ4 {
+  display: none;
+}
+
 body {
-  background-color: #A9E0FF;
-  transition: filter 0.5s ease; /* Smooth transition for the blur effect */
+  background-color: #a9e0ff;
+  transition: filter 0.5s ease;
+  /* Smooth transition for the blur effect */
 }
 
 body.blurred {
-  filter: blur(3px); /* Adjust the blur intensity as needed */
+  filter: blur(3px);
+  /* Adjust the blur intensity as needed */
 }
 
 #cap4 {
@@ -17,33 +25,29 @@ body.blurred {
 
 .popup {
   position: fixed;
+  overflow: hidden;
+  border-radius: 5%;
+}
+
+#popup1 {
+  top: 5vh;
+  left: 2vh;
+  border: 6px solid #ffa72b;
+  width: 70vw;
 }
 
 #popup2 {
   bottom: 15vh;
   right: 8vh;
   width: 40vw;
-  height: 25vh;
-  background-color: rgb(204, 229, 80);
-  border-radius: 5%;
   border: 6px solid #ffa600;
-}
-
-#popup1 {
-  top: 5vh;
-  left: 4vh;
-  width: 50vw;
-  height: 29vh;
-  background-color: rgb(95, 218, 240);
-  border-radius: 5%;
-  border: 6px solid #52ff2b;
 }
 
 h1 {
   font-family: "Kadwa", serif;
   font-weight: 700;
   text-align: center;
-  color: #001C2B;
+  color: #001c2b;
   font-size: 1.7em;
   line-height: 1.8em;
 }
@@ -88,14 +92,14 @@ form {
   box-shadow: none;
   border: none;
   margin: 7px 0;
-  background-color: #F8F5F5;
+  background-color: #f8f5f5;
   font-size: 1em;
   font-family: "Kadwa", serif;
   font-weight: 400;
 }
 
 .div {
-  background-color: #BFBFBF;
+  background-color: #bfbfbf;
   height: 1px;
   position: relative;
   margin: 20px 0px;

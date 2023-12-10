@@ -1,143 +1,147 @@
-*{
-    box-sizing: border-box;
+* {
+  box-sizing: border-box;
 }
 
-// .champ2, .champ3, .champ4{
-//     display: none;
-// }
+.champ2,
+.champ3,
+.champ4 {
+  display: none;
+}
+
 body {
-    background-color: #A9E0FF;
-    transition: filter 0.5s ease; /* Smooth transition for the blur effect */
+  background-color: #a9e0ff;
+  transition: filter 0.5s ease;
+  /* Smooth transition for the blur effect */
 }
+
 body.blurred {
-    filter: blur(3px); /* Adjust the blur intensity as needed */
+  filter: blur(3px);
+  /* Adjust the blur intensity as needed */
 }
 
-#cap4{
-    color: rgb(242, 242, 242);
+#cap4 {
+  color: rgb(242, 242, 242);
 }
 
-.popup{
-    position: fixed;
-
+.popup {
+  position: fixed;
+  overflow: hidden;
+  border-radius: 5%;
 }
 
-#popup2{
-    bottom: 15vh;
-    right: 8vh;
-    width: 40vw;
-    height: 25vh;
-    background-color: rgb(204, 229, 80);
-    border-radius: 5%;
-    border: 6px solid #ffa600;
-}
-#popup1{
-    top: 5vh;
-    left: 4vh;
-    width: 50vw;
-    height: 29vh;
-    background-color: rgb(95, 218, 240);
-    border-radius: 5%;
-    border: 6px solid #52ff2b;
+#popup1 {
+  top: 5vh;
+  left: 2vh;
+  border: 6px solid #ffa72b;
+  width: 70vw;
 }
 
-h1{
-    font-family: 'Kadwa', serif;
-    font-weight: 700;
-    text-align: center;
-    color: #001C2B;
-    font-size: 1.7em;
-    line-height: 1.8em;
+#popup2 {
+  bottom: 15vh;
+  right: 8vh;
+  width: 40vw;
+  border: 6px solid #ffa600;
+}
+
+
+
+h1 {
+  font-family: "Kadwa", serif;
+  font-weight: 700;
+  text-align: center;
+  color: #001c2b;
+  font-size: 1.7em;
+  line-height: 1.8em;
 }
 
 @mixin normalText {
-    font-size: 1em;
-    font-family: 'Kadwa', serif;
-    font-weight: 400;
-  }
+  font-size: 1em;
+  font-family: "Kadwa", serif;
+  font-weight: 400;
+}
 
 @mixin unselectable {
-    user-select: none;
-    -moz-user-select: none;
-    -webkit-user-select: none;
-    -ms-user-select: none;
+  user-select: none;
+  -moz-user-select: none;
+  -webkit-user-select: none;
+  -ms-user-select: none;
 }
 
-h2{
-    @include normalText;
-    margin-top: 0;
-    margin-bottom: 0px;
-    margin-left: 0;
+h2 {
+  @include normalText;
+  margin-top: 0;
+  margin-bottom: 0px;
+  margin-left: 0;
 }
 
-.titre{
-    padding: 0px 10px;
+.titre {
+  padding: 0px 10px;
 }
 
-label{
-    font-family: Kadwa;
-    font-weight: 700;
+label {
+  font-family: Kadwa;
+  font-weight: 700;
 }
 
-.wrapper{
-    width: 85vw;
-    margin-left: auto;
-    margin-right: auto;
-    position: relative;
-    max-width: 642px;
+.wrapper {
+  width: 85vw;
+  margin-left: auto;
+  margin-right: auto;
+  position: relative;
+  max-width: 642px;
 }
 
-form{
-    box-shadow: 0px 4px 8.4px 2px rgba(0, 0, 0, 0.25);
-    background-color: #ffffff;
-    border-radius: 20px;
-    padding: 5px 0;
-    margin-top: 7%;
+form {
+  box-shadow: 0px 4px 8.4px 2px rgba(0, 0, 0, 0.25);
+  background-color: #ffffff;
+  border-radius: 20px;
+  padding: 5px 0;
+  margin-top: 7%;
 }
 
-.textInput{
-    width: 100%;
-    padding: 10px;
-    box-shadow: none;
-    border: none;
-    margin: 7px 0;
-    background-color: #F8F5F5;
-    @include normalText;
+.textInput {
+  width: 100%;
+  padding: 10px;
+  box-shadow: none;
+  border: none;
+  margin: 7px 0;
+  background-color: #f8f5f5;
+  @include normalText;
 }
 
-.div{
-    background-color: #BFBFBF;
-    height: 1px;
-    position: relative;
-    margin: 20px 0px;
+.div {
+  background-color: #bfbfbf;
+  height: 1px;
+  position: relative;
+  margin: 20px 0px;
 }
 
-.small{
-    margin-left: auto;
-    margin-right: auto;
+.small {
+  margin-left: auto;
+  margin-right: auto;
 }
 
-.full{
-    width: 100%;
-    margin: 0px;
+.full {
+  width: 100%;
+  margin: 0px;
 }
 
-.popup{
-    z-index: 999;
+.popup {
+  z-index: 999;
 }
 
-.capch{
-    background-color: #fff;
-    border: 1px solid #000;
-    text-align: center;
-    font-family: 'Times New Roman', Times, serif;
-    font-size: 30px;
-    padding: 2% 0;
-    margin-bottom: 20px;
+.capch {
+  background-color: #fff;
+  border: 1px solid #000;
+  text-align: center;
+  font-family: "Times New Roman", Times, serif;
+  font-size: 30px;
+  padding: 2% 0;
+  margin-bottom: 20px;
 
-    @include unselectable;
+  @include unselectable;
 }
 
-section{
-    padding: 15px 5%;
+section {
+  padding: 15px 5%;
 }

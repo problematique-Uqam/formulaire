@@ -10,6 +10,7 @@ var champ3 = document.getElementById("blurTrigger");
 var cap3 = document.getElementById("cap3").innerHTML;
 var field3 = document.querySelector(".champ3");
 var popup = document.getElementById("popup");
+var ArrayPopup = document.querySelectorAll(".popup");
 
 var champ4 = document.getElementById("champ4");
 var cap4 = document.getElementById("cap4").innerHTML;
@@ -30,18 +31,6 @@ function afficherPopup() {
         });
 
         // Si au moins un popup n'est pas affiché, choisir celui-ci en priorité
-
-        console.log(contenuChamp.length);
-
-        if (contenuChamp.length == 3) {
-            let g1 = document.getElementById("g1");
-
-            g1.classList.add('active');
-            var hauteurBoite = g1.clientHeight;
-
-            document.getElementById("d1").style.transform = 'translateY(' + hauteurBoite + 'px)';
-        }
-
         if (popupsNonAffiches.length > 0) {
             // Cacher tous les popups
             // popups.forEach(function (popup) {
@@ -65,6 +54,16 @@ function afficherPopup() {
 
     if (cap1 == contenuChamp) {
         field2.style.display = "block";
+        ArrayPopup.forEach(pop => {
+            pop.style.opacity = "0";
+            setTimeout(function () {
+                pop.style.display = "none";
+            }, 500);
+        });
+
+        setTimeout(function () {
+            field2.style.opacity = '1';
+        }, 10);
     }
 }
 
@@ -134,6 +133,10 @@ function remapperClavier() {
 
     if (cap2 == texteEntree) {
         field3.style.display = "block";
+
+        setTimeout(function () {
+            field3.style.opacity = '1';
+        }, 10);
     }
 }
 document.getElementById("blurTrigger").addEventListener("focus", function () {
@@ -145,10 +148,33 @@ document.getElementById("blurTrigger").addEventListener("blur", function () {
 });
 
 document.getElementById("blurTrigger").addEventListener("input", function () {
-    var valeurMise = champ3.value.toLowerCase();
 
-    if (cap3 == valeurMise) {
+    var valeurMise = champ3.value.toLowerCase();
+    console.log(champ3.value);
+    console.log(cap3);
+
+
+    if ("futdcuk" == champ3.value) {
+
         field4.style.display = "block";
         document.body.classList.remove("blurred");
+        setTimeout(function () {
+            field4.style.opacity = '1';
+        }, 10);
     }
 });
+
+function check() {
+    var value = document.getElementById("cap4").value.toLowerCase();
+    var field5 = document.querySelector(".champ5");
+
+    if (cap4 == valeurMise) {
+        field5.style.display = "block";
+        document.body.classList.remove("blurred");
+
+
+        setTimeout(function () {
+            field4.style.opacity = '1';
+        }, 10);
+    }
+}

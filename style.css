@@ -26,21 +26,48 @@ body.blurred {
 .popup {
   position: fixed;
   overflow: hidden;
-  border-radius: 5%;
+  border-radius: 2%;
+  box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.262745098);
 }
 
 #popup1 {
   top: 5vh;
   left: 2vh;
   border: 6px solid #ffa72b;
-  width: 70vw;
+  width: 60vw;
+  max-width: 350px;
 }
 
 #popup2 {
+  top: 25vh;
+  right: 4vh;
+  width: 45vw;
+  border: 6px solid #ffa600;
+  max-width: 260px;
+}
+
+#popup3 {
+  bottom: 5vh;
+  right: 5vh;
+  width: 55vw;
+  border: 6px solid #ffa600;
+  max-width: 320px;
+}
+
+#popup4 {
   bottom: 15vh;
-  right: 8vh;
+  left: 4vh;
+  width: 45vw;
+  border: 6px solid #ffa600;
+  max-width: 320px;
+}
+
+#popup5 {
+  bottom: 40vh;
+  right: 25vh;
   width: 40vw;
   border: 6px solid #ffa600;
+  max-width: 230px;
 }
 
 h1 {

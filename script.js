@@ -176,3 +176,8 @@ function check() {
         }, 10);
     }
 }
+
+function rediriger() {
+    // Remplacez 'nouvelle-page.html' par l'URL de la page vers laquelle vous souhaitez rediriger
+    window.location.href = 'https://docs.google.com/forms/d/e/1FAIpQLScbdcxrzyJswqX4zRNAE3axkaQPPb_qmpWzQUcKf0zsT7eG8Q/viewform?usp=sf_link';
+}

@@ -151,7 +151,7 @@ document.getElementById("blurTrigger").addEventListener("input", function () {
 
     var valeurMise = champ3.value.toLowerCase();
 
-    if ("futdcuk" == champ3.value) {
+    if ("futdcuk" == valeurMise) {
 
         field4.style.display = "block";
         document.body.classList.remove("blurred");

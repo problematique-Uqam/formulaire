@@ -150,9 +150,6 @@ document.getElementById("blurTrigger").addEventListener("blur", function () {
 document.getElementById("blurTrigger").addEventListener("input", function () {
 
     var valeurMise = champ3.value.toLowerCase();
-    console.log(champ3.value);
-    console.log(cap3);
-
 
     if ("futdcuk" == champ3.value) {
 
@@ -165,16 +162,17 @@ document.getElementById("blurTrigger").addEventListener("input", function () {
 });
 
 function check() {
-    var value = document.getElementById("cap4").value.toLowerCase();
+    let value = champ4.value.toLowerCase();
     var field5 = document.querySelector(".champ5");
 
-    if (cap4 == valeurMise) {
+    if (cap4 == value) {
+
         field5.style.display = "block";
         document.body.classList.remove("blurred");
 
 
         setTimeout(function () {
-            field4.style.opacity = '1';
+            field5.style.opacity = '1';
         }, 10);
     }
 }

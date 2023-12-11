@@ -2,15 +2,6 @@
   box-sizing: border-box;
 }
 
-.champ2,
-.champ3,
-.champ4,
-.champ5 {
-  display: none;
-  opacity: 0;
-  transition: opacity 1s ease-in-out;
-}
-
 body {
   background-color: #a9e0ff;
   transition: filter 0.5s ease;
